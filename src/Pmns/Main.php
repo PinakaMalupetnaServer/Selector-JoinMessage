@@ -28,7 +28,7 @@ class Main extends P implements L {
 	    $this->getServer()->getPluginManager()->registerEvents($this, $this);
 	}
 	
-	public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args) : bool
+	public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args) : bool {
             switch($cmd->getName()){
 		case "games":
 		    if($sender instanceof Player){
