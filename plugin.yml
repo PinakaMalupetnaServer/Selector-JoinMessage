@@ -1,0 +1,11 @@
+name: Selector
+main: Pmns\Main
+version: 1.0.0
+api: 3.0.0
+author: RinierMC
+
+commands: 
+ games:
+    usage: "/games""
+
+
