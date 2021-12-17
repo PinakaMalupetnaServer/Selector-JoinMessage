@@ -60,7 +60,7 @@ class Main extends P implements L
         $p->getInventory()->clearAll();
         $p->getArmorInventory()->clearAll();
         $compass = Item::get(Item::COMPASS);
-        $compass->setCustomName(TF::RESET . TF::GOLD "Game Selector" . TF::RESET);
+        $compass->setCustomName(TF::RESET . TF::GOLD . "Game Selector" . TF::RESET);
             $compass->setLore([TF::RESET,
                 TF::RESET . TF::GREEN . "Right Click/Interact to open Selector UI",
                 TF::RESET]);
