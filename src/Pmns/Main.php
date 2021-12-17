@@ -17,6 +17,8 @@ use pocketmine\command\Command;
 use pocketmine\nbt\tag\StringTag;
 use pocketmine\nbt\tag\ListTag;
 
+use jojoe777\FormAPI\SimpleForm;
+
 use pocketmine\item\Item;
 use pocketmine\inventory\Inventory;
 
@@ -71,8 +73,7 @@ class Main extends P implements L {
 	 }
 	 
 	public function OpenUI($player){
-	    $api = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
-	    $form = $api->createSimpleForm(function (Player $player, int $data = null){
+	    $form = new SimpleForm(function (Player $player, int $data = null){
 	    $result = $data;
 	    if($result === null){
 	        return true;
