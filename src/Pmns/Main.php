@@ -40,7 +40,6 @@ class Main extends P implements L {
 	}
 	
 	public function onJoin(PlayerJoinEvent $EV){
-		$cfg->getAll();
         $p = $EV->getPlayer();
         $pi = $p->getInventory();
         $pn = $p->getName();
@@ -48,7 +47,7 @@ class Main extends P implements L {
         $p->sendMessage("§l§3-§b-§3-§b-§3-§b-§3-§b-§3-§b-§3-§b- §ePMNS §3-§b-§3-§b-§3-§b-§3-§b-§3-§b-§3-§b-\n§r\n§r     §7Welcome to §l§ePMNS §r§7".$name."\n§r\n     §l§bDISCORD: §r§7https://discord.gg/wt5aH5Bujm\n     §l§dWEBSITE: §r§7SOON\n     §l§aVOTING SITE: §r§7SOON\n§r\n§l§b-§3-§b-§3-§b-§3-§b-§3-§b-§3-§b-§3-");
         $EV->setJoinMessage("§l§7[§a+§7] §r§e".$name);
         $level = $p->getLevel();
-		$compass = Item::get(Item::COMPASS);
+        $compass = Item::get(Item::COMPASS);
         $compass->setCustomName("§r§l§eGame Selector");
         $compass->setLore(["§r", 
         "§r§l§c- §r§aRight Click To Open Game Slector UI", 
