@@ -102,16 +102,16 @@ class Main extends P implements L
                     break;
 
                 case 2:
-                    $player->sendMessage("§l§8[§a!§8] §r§bDUELS §e» §aCOMING SOON!");
+                    $player->sendMessage(TF::GRAY . "Coming Soon..");
                     break;
             }
             return true;
         });
-        $form->setTitle("§l§bGamesUI");
+        $form->setTitle(TF::BOLD . TF::RED . "GamesUI");
         $form->setContent("Please Select Game");
-        $form->addButton("§l§2Survival");
-        $form->addButton("§l§ePot§bPvP");
-        $form->addButton("§l§eDuels\n§7Coming Soon");
+        $form->addButton(TF::BOLD . TF::GOLD ."Pot" . TF::WHITE . "PvP");
+        $form->addButton(TF::BOLD . TF::GREEN . "Survival Mode");
+        $form->addButton(TF::GRAY . "Coming Soon");
 
         $form->sendToPlayer($player);
         return $form;
