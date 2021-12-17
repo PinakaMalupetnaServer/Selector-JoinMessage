@@ -6,6 +6,7 @@ author: RinierMC
 
 commands: 
  games:
-    usage: "/games""
+    description: Launch games list
+    usage: "/games"
 
 
