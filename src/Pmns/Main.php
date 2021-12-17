@@ -44,7 +44,7 @@ class Main extends P implements L {
             $pi = $p->getInventory();
             $pn = $p->getName();
             $name = $pn;
-            $p->sendMessage("§l§3-§b-§3-§b-§3-§b-§3-§b-§3-§b-§3-§b- §ePMNS §3-§b-§3-§b-§3-§b-§3-§b-§3-§b-§3-§b-\n§r\n§r     §7Welcome to §l§ePMNS §r§7".$name."\n§r\n     §l§bDISCORD: §r§7https://discord.gg/wt5aH5Bujm\n     §l§dWEBSITE: §r§7SOON\n     §l§aVOTING SITE: §r§7SOON\n§r\n§l§b-§3-§b-§3-§b-§3-§b-§3-§b-§3-§b-§3-");
+            $p->sendMessage("§l§3-§b-§3-§b-§3-§b-§3-§b-§3-§b-§3-§b- §4PMNS §3-§b-§3-§b-§3-§b-§3-§b-§3-§b-§3-§b-\n§r\n§r     §7Welcome to §l§4PMNS §r§7".$name."\n§r\n     §l§bDISCORD: §r§7https://discord.gg/wt5aH5Bujm\n     §l§dWEBSITE: §r§7pmns.princepines.digital\n     §l§aVOTING SITE: §r§7pmns.princepines.digital/vote\n§r\n§l§b-§3-§b-§3-§b-§3-§b-§3-§b-§3-§b-§3-");
             $EV->setJoinMessage("§l§7[§a+§7] §r§e".$name);
             $level = $p->getLevel();
             $compass = Item::get(Item::COMPASS);
