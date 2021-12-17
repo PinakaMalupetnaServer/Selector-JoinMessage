@@ -17,7 +17,7 @@ use pocketmine\command\Command;
 use pocketmine\nbt\tag\StringTag;
 use pocketmine\nbt\tag\ListTag;
 
-use jojoe777\FormAPI\SimpleForm;
+use jojoe77777\FormAPI\SimpleForm;
 
 use pocketmine\item\Item;
 use pocketmine\inventory\Inventory;
@@ -72,7 +72,7 @@ class Main extends P implements L
     public function onLeave(PQ $e)
     {
         $p = $e->getPlayer();
-        $e->setQuitMessage(TF::RED . "+ " . $p->getName());
+        $e->setQuitMessage(TF::RED . "- " . $p->getName());
     }
 
     public function click(CL $ev)
