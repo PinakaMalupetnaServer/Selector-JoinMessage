@@ -94,11 +94,11 @@ class Main extends P implements L
             switch ($result) {
 
                 case 0:
-                    $this->getServer()->dispatchCommand($player, "survival");
+                    $this->getServer()->dispatchCommand($player, "pvp");
                     break;
 
                 case 1:
-                    $this->getServer()->dispatchCommand($player, "pvp");
+                    $this->getServer()->dispatchCommand($player, "survival");
                     break;
 
                 case 2:
